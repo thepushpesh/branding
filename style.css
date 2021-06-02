@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700;900&display=swap');
+
+:root{
+    --mainbg: hsl(62, 52%, 90%);
+    --backtext: hsl(27, 61%, 87%);
+    --pink: hsl(0, 73%, 80%);
+    --text: #191970;
+    --blue: #191970E6;
+    --lightblu: #06D6B3;
+}
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto',
+    sans-serif;
+}
+main {
+    background: var(--mainbg);
+    height: 100vh;
+}
+
+.main-back {
+    position: relative;
+}
+
+.main-back h1:before {
+    content: '';
+    display: flex;
+    justify-content: center;
+    animation: push infinite 5s;
+    color: var(--backtext);
+    text-align: center;
+    position: absolute;
+    left: 1.5em;
+    bottom: -2.3em;
+    line-height: 0.8;
+    font-size: 16vw;
+    font-weight: 900;
+    width: 60vw;
+    margin: 0 auto;
+    max-width: 1000px;
+
+}
+
+@keyframes push {
+    0% {
+        content: 'User Experience';
+    }
+    25% {
+        content: 'Print Design';
+    }
+    50% {
+        content: 'Art Director';
+    }
+    75% {
+        content: 'Elegant Design';
+    }
+    100% {
+        content: 'Web Design';
+    }
+}
+.main-front {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.main-front h1{
+    z-index: 1;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.5;
+    color: var(--text);
+    text-align: center;
+    width: 90vw;
+    max-width: 1000px;
+    position: absolute;
+    top: 9em;
+}
+
+.fas {
+    position: absolute;
+    left: 12em;
+    bottom: 0em;
+    font-weight: 600;
+    font-size: 5rem;
+    color: var(--backtext);
+}
+
+section{
+    background: var(--blue);
+    color: #fff;
+    padding-top: 10em;
+}
+
+.intro {
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about p{
+    width: 700px;
+    line-height: 1.5;
+    margin-bottom: 1em;
+    letter-spacing: .7px;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+ul {
+    list-style: none;
+    margin: 2.5em 0;
+}
+
+ul > li {
+    color: var(--pink);
+    letter-spacing: .7px;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 2;
+}
+
+.two {
+    width: 95vw;
+    margin: 0 auto;
+    max-width: 1300px;
+}
+.two-inside {
+    width: 1000px;
+    padding: 8em 0;
+}
+.two h1 {
+    color: var(--pink);
+    font-size: 6.5rem;
+}
+.two h1 span:before {
+    content: '';
+    animation: pull infinite 5s;
+    font-size: 11rem;
+    display: block;
+}
+
+@keyframes pull {
+    0% {
+        content: 'minds';
+    }
+    25% {
+        content: 'perspective';
+    }
+    50% {
+        content: 'Opinion';
+    }
+    75% {
+        content: 'approaches';
+    }
+    100% {
+        content: 'heart';
+    }
+}
+
+.image {
+    position: relative;
+    background-image: url('./images/lisa.jpg');
+    min-height: 600px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.names {
+    position: absolute;
+    width: 150px;
+    font-size: 5.5rem;
+    font-weight: 900;
+    color: #fff;
+}
+.woman {
+    top: 2em;
+    left: 4em;
+}
+
+.men {
+    left: 15em;
+    top: 2em;
+}
+
+.our-work {
+    max-width: 1150px;
+    margin: 0 auto;
+    width: 90vw;
+    color: var(--blue);
+    margin-top: 10em;
+}
+
+.our-work p {
+    line-height: 1.5;
+    letter-spacing: .7px;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+    margin: 5em 0 10em;
+}
+
+
+.second {
+    margin-top: 5em;
+}
+
+.overlay {
+    width: 500px;
+    height: 750px;
+    background: var(--text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlay-inside-one,
+.overlay-inside-two,
+.overlay-inside-three,
+.overlay-inside-four {
+    position: relative;
+}
+
+
+.overlay .text {
+    color: #fff;
+    text-align: center;
+}
+.img img {
+    position: absolute;
+}
+.img img:hover {
+    opacity: .15;
+    transition: .2s ease;
+}
+
+.slope-one {
+    position: absolute;
+    left: 20.7em;
+    top: -25em;
+    background: black;
+    width: 80px;
+    height: 20px;
+}
+
+.stand-one {
+    position: absolute;
+    left: 24.7em;
+    top: -25em;
+    background: black;
+    width: 20px;
+    height: 75px;
+}
+
+.slope-two {
+    position: absolute;
+    left: -26em;
+    top: 23.7em;
+    background: black;
+    width: 80px;
+    height: 20px;
+}
+
+.stand-two {
+    position: absolute;
+    left: -26em;
+    top: 20em;
+    background: black;
+    width: 20px;
+    height: 75px;
+}
+
+.slope-three {
+    position: absolute;
+    left: 17.7em;
+    top: -25em;
+    background: black;
+    width: 80px;
+    height: 20px;
+}
+
+.stand-three {
+    position: absolute;
+    left: 21.7em;
+    top: -25em;
+    background: black;
+    width: 20px;
+    height: 75px;
+}
+
+.slope-four{
+    position: absolute;
+    left: -23em;
+    top: 23.7em;
+    background: black;
+    width: 80px;
+    height: 20px;
+}
+
+.stand-four {
+    position: absolute;
+    left: -23em;
+    top: 20em;
+    background: black;
+    width: 20px;
+    height: 75px;
+}
+
+footer {
+    background: var(--lightblu);
+    padding: 4.5em 2em;
+}
+
+footer h2{
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+footer h1 {
+    color: var(--blue);
+    font-size: 2rem;
+    font-weight: 900;
+    margin: 1.3em 0;
+}
+
+footer .email {
+    border-bottom: 8px solid #fff;
+    width: 280px;
+}
+
+@media (max-width: 1250px){
+.main-back h1:before {
+    top: 1.5em;
+}
+    .men {
+        left: 8em;
+    }
+    .fas {
+        left: 8em;
+    }
+    .woman {
+        font-size: 4rem;
+        left: 4em;
+        top: 3em;
+    }
+    .men {
+        font-size: 4rem;
+        top: 3em;
+        left: 8em;
+    }
+
+}
+
+@media (max-width: 1050px) {
+.main-front h1 {
+    font-size: 2.5rem;
+}
+.fas {
+    left: 7em;
+}
+.intro {
+    flex-direction: column;
+}
+.img img {
+    width: 350px;
+    height: 450px;
+}
+
+.overlay {
+width: 300px;
+height: 400px;
+background: var(--text);
+
+}
+.overlay-inside-one,
+.overlay-inside-two,
+.overlay-inside-three,
+.overlay-inside-four {
+    display: none;
+}
+.two h1 {
+    font-size: 4.5rem;
+}
+
+.two h1 span:before {
+    font-size: 8rem;
+}
+
+}
+
+@media (max-width: 400px) {
+    main {
+        height: 60vh;
+    }
+    .main-front {
+        justify-content: center;
+        padding: 12em 2em;
+    }
+    .main-front h1 {
+        line-height: 1.3;
+        font-size: 1.6rem;
+    }
+    .main-back h1:before {
+        content: '';
+        left: 3em;
+        top: 8em;
+        font-size: 3rem;
+        width: 100px;
+    }
+    .fas {
+        left: 6em;
+        font-size: 2rem;
+        top: 15em;
+    }
+    
+    .about p {
+        font-size: 1rem;
+        padding: 0 1em;   
+        width: 320px; 
+    }
+    .we-offer ul {
+        column-count: 2;
+        width: 320px;
+        padding: 0 1em;
+    }
+    .two-inside {
+        width: 350px;
+        padding: 2em 1em;
+    }
+    .two-inside h1{
+        font-size: 2rem;
+    }
+    .two-inside h1 span:before {
+        font-size: 2.8rem;
+    }
+    .our-work{
+        width: 320px;
+        padding: 1em;
+    }
+    .image {
+        min-height: 250px;
+    }
+    .names {
+        width: 100px;
+        font-size: 1.5rem;
+        font-weight: 900;
+        color: #fff;
+    }
+    .woman {
+        top: 4em;
+        left: 2em;
+    }
+    .men {
+        left: 10em;
+        top: 4em;
+    }
+    .projects {
+        flex-direction: column;
+    }
+    .img {
+        display: flex;
+        justify-content: center;
+    }
+    .img img{
+        width: 250px;
+        height: 350px;
+    }
+
+   .overlay {
+       width: 250px;
+       height: 350px;
+       background: var(--text);
+   }
+   .overlay .text {
+       font-size: .5rem;
+   }
+
+    .slope-one {
+        left: 11.8em;
+        top: -11.6em;
+        width: 70px;
+        height: 15px;
+   }
+
+   .stand-one {
+       left: 15.7em;
+       top: -11.6em;
+       width: 15px;
+       height: 70px;
+   }
+
+   .slope-two {
+        left: -16.7em;
+        top: 10.6em;
+       width: 70px;
+       height: 15px;
+   }
+
+   .stand-two {
+        left: -16.7em;
+        top: 7em;
+       width: 15px;
+       height: 70px;
+   }
+
+   .slope-three {
+      left: 10em;
+        top: -11.7em;
+       width: 70px;
+       height: 15px;
+   }
+
+   .stand-three {
+      left: 13.7em;
+      top: -11.6em;
+      width: 15px;
+      height: 70px;
+   }
+
+   .slope-four {
+          left: -14.7em;
+          top: 10.7em;
+       width: 70px;
+       height: 15px;
+   }
+
+   .stand-four {
+       left: -14.7em;
+       top: 7em;
+       width: 15px;
+       height: 70px;
+   }
+
+
+}
+
+
+
+
