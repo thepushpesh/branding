@@ -374,12 +374,7 @@ height: 400px;
 background: var(--text);
 
 }
-.overlay-inside-one,
-.overlay-inside-two,
-.overlay-inside-three,
-.overlay-inside-four {
-    display: none;
-}
+
 .two h1 {
     font-size: 4.5rem;
 }
@@ -406,7 +401,8 @@ background: var(--text);
         font-size: 1.6rem;
     }
     .fas {
-        padding-top: 1.5em;
+        padding-top: 5em;
+        font-size: 1.8rem;
     }
     
     .about p {
